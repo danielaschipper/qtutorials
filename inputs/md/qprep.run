@@ -1,0 +1,14 @@
+readlib ff_q/Qoplsaa.lib
+readlib ff_q/heme.lib
+readlib ff_q/cma.lib
+readprm ff_q/Qoplsaa.prm
+readpdb complex.pdb
+addbond 5480 6383 y
+boundary sphere 407:C1 18
+solvate 407:C1 18 1 HOH
+maketop "cma compex topology"
+writetop cma.top
+writepdb cma_top.pdb y
+quit
+
+

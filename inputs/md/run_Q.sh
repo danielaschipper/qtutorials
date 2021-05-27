@@ -10,7 +10,7 @@ set wd = `pwd`
 #set qpath = /home/ander/Q
 echo $1
 if ($1 == qdyn) then
-	set Qdyn = Qdyn6p
+	set Qdyn = "mpirun Qdyn6p"
 #elseif ($1 == qdum) then
 #	set Qdyn = $qpath/Qdum5
 else echo "You must specify at leat one Q_option (qdyn or qdum)"
